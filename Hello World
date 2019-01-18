@@ -1,0 +1,52 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "I'm studying java";
+        System.out.println("Длина строки:" + str.length());
+        int mid = str.length() / 2;
+        String s1 = str.substring(0, mid);
+        String s2 = str.substring(mid);
+        System.out.println(s1);
+        System.out.println(s2);
+
+        int x = (int) (Math.random() * 10);
+        if (x % 10 == 7)
+            System.out.println("Последняя цифра числа " + x + "-семерка");
+        else
+            System.out.println("Последняя цифра числа " + x + "-не семерка");
+
+        int a = (int) (Math.random() * 100);
+        int b = (int) (Math.random() * 100);
+        int r = (int) (Math.random() * 100);
+        if (a * a + b * b >= r * r)
+            System.out.println("Отверстие " + a + "х" + b + " Картонка радиусом " + r + " закроет");
+        else
+            System.out.println("Отверстие " + a + "х" + b + " Картонка радиусом " + r + " не закроет");
+
+        int y = (int) (Math.random() * 200);
+        if (x % 10 == 1)
+            System.out.println(x + " рубль");
+        else if (x % 10 > 1 && x % 10 < 5)
+            System.out.println(x + " рубля");
+        else
+            System.out.println(x + " рублей");
+
+        String str_1= "??##??,I'm studying java";
+        String str_new =str_1.replace("?","Hello");
+        String str_new_1 =str_new.replace("#","");
+            System.out.println(str_new_1);
+
+            int z=2;
+            int t=2;
+            int s=3;
+            double f;
+            double d;
+            double w;
+        int base =z;
+        int power = t;
+        int power_1 = s;
+        f=(double)Math. pow(base, power);
+        d=1+(double)Math. pow(base, power_1);
+        w=(double)Math.sin(f)*(double)Math.sin(f)/(double)Math.sqrt(d);
+        System. out. println("Result: " + w);
+    }
+}
